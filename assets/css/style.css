@@ -6,3 +6,7 @@
 img {
 	max-width: 100%;
 }
+
+#searchTerms, #numRecords, #startYear, #endYear {
+	width: 80%;
+}
