@@ -16,53 +16,55 @@
     <div class="wrapper">
         <div class="container">
             <div class='row'>
-                <div class="col-xs-10 offset-xs-1">
-                    <div class="row">
+                <div class="col-xs-12">
+                    <div class="row" id="headerRow">
+                        
                         <div class="col-xs-3"><img src="assets/images/NYTIMES.PNG"></div>
                         <div class="col-xs-9" id="NYT"><img src="assets/images/The_New_York_Times_logo.png"></div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Search Parameters</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form enctype="text/plain">
+                                <h5>Search Terms:</h5>
+                                <input type="text" name="search" placeholder="Johnny McApplespitz" id="searchTerms">
+                                <h5>Number of Records:</h5>
+                                <input type="number" name="number" min="0" placeholder="0" id="numRecords">
+                                <h5>Start Year: (optional)</h5>
+                                <input type="text" name="start year" placeholder="1995" id="startYear">
+                                </textarea>
+                                <h5>End Year: (optional)</h5>
+                                <input type="text" name="end year" placeholder="2017" id="endYear">
+                                </textarea>
+                                <br>
+                                <br>
+                                <input class="submit-button" type="submit" value="Search">
+                                <input class="clear-button" type="reset" value="Clear Search">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Search Parameters</h3>
-                    </div>
-                    <div class="panel-body">
-                        <form enctype="text/plain">
-                            <h5>Search Terms:</h5>
-                            <input type="text" name="search" placeholder="Johnny McApplespitz" id="searchTerms">
-                            <h5>Number of Records:</h5>
-                            <input type="number" name="number" min="0" placeholder="0" id="numRecords">
-                            <h5>Start Year: (optional)</h5>
-                            <input type="text" name="start year" placeholder="1995" id="startYear">
-                            </textarea>
-                            <h5>End Year: (optional)</h5>
-                            <input type="text" name="end year" placeholder="2017" id="endYear">
-                            </textarea>
-                            <br>
-                            <br>
-                            <input class="submit-button" type="submit" value="Search">
-                            <input class="clear-button" type="reset" value="Clear Search">
-                        </form>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Top Articles</h3>
-                    </div>
-                    <div class="panel-body">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Top Articles</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="topResults"> </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 <script src="assets/javascript/jquery-3.1.1.min.js"></script>
 <script src="assets/javascript/tether.js"></script>
