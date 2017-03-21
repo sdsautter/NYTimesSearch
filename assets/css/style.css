@@ -7,10 +7,15 @@ img {
 	max-width: 100%;
 }
 
-body, html {
-	max-width: 99%;
-}
-
 #searchTerms, #numRecords, #startYear, #endYear {
 	width: 80%;
+}
+
+.panel-body {
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+#NYT {
+	padding-top: 3%;
 }
